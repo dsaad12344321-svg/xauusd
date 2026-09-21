@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; min-height: 100%; }
+body {
+  background: #0a0d12;
+  color: #e7edf5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button, input { font: inherit; }
+.container { max-width: 1200px; margin: 0 auto; padding: 32px 20px 60px; }
+.header { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; margin-bottom: 28px; }
+.eyebrow { color: #7dd3fc; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+h1 { margin: 6px 0 8px; font-size: 34px; }
+.subtitle { margin: 0; color: #9aa7b8; max-width: 720px; line-height: 1.6; }
+.grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px; }
+.card { background: #11161e; border: 1px solid #202938; border-radius: 14px; padding: 18px; }
+.label { color: #8d9bad; font-size: 12px; margin-bottom: 8px; }
+.value { font-size: 22px; font-weight: 700; }
+.section { margin-top: 22px; }
+.section h2 { font-size: 18px; margin: 0 0 12px; }
+.panel { background: #11161e; border: 1px solid #202938; border-radius: 14px; padding: 20px; }
+.row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.path { flex: 1; min-width: 280px; background: #0b1017; border: 1px solid #273142; color: #dce6f2; padding: 11px 12px; border-radius: 9px; }
+.btn { border: 0; border-radius: 9px; padding: 11px 16px; background: #38bdf8; color: #061018; font-weight: 700; cursor: pointer; }
+.btn:disabled { opacity: .55; cursor: wait; }
+.status { margin-top: 12px; color: #9aa7b8; }
+.error { color: #fca5a5; }
+.good { color: #86efac; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #202938; }
+.table th { color: #8d9bad; font-size: 12px; }
+.note { color: #9aa7b8; line-height: 1.6; font-size: 14px; }
+@media (max-width: 850px) { .grid { grid-template-columns: repeat(2, minmax(0,1fr)); } .header { flex-direction: column; } }
+@media (max-width: 520px) { .grid { grid-template-columns: 1fr; } .container { padding: 22px 14px; } }
